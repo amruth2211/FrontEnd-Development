@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="col-md-5 mx-auto">
+      <header class="text-center">
+        <h1 class="display-4 text-primary text-uppercase">Login</h1>
+        <h6 class="text-secondary">Enter your credentials</h6>
+      </header>
+      <hr />
+      <section>
+        <form action="register-backend" method="GET" class="font-weight-bold">
+      <!-- Email -->
+      <div id="emailField" name="emailField" class="form-group">
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-control"
+          placeholder="abc@xyz.com"
+          required
+        />
+      </div>
+      <!-- Password -->
+      <div id="passwordField" name="passwordField" class="form-group">
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-control"
+          required
+        />
+      </div>
+      <!-- Captcha Code-->
+
+      <div id="captcha" name="captcha" class="row form-group"> 
+      <div id="captchaField" name="captchaField" class="col-lg-6">
+        <label for="captcha">Captcha Code</label><br />
+        <div class="container form-controller" style="background-color:rgb(255, 255, 0)">Q23f42</div>
+      </div>
+
+      <!--Enter Captcha-->
+      <div id="captchaEntryField" name="captchaEntryField" class="col-lg-6">
+        <label for="captcha">Enter Captcha</label><br />
+        <input
+          type="captcha"
+          id="captcha"
+          name="captcha"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          type="checkbox"
+          name="Keep me signed in"
+          id="Keep me signed in"
+          class="form-check-input"
+        />
+        <label for="Keep me signed in" class="form-check-label"
+          >Keep me signed in</label
+        >
+      </div>
+    </div>
+      <!-- Submit Button -->
+      <div id="loginButton">
+        <input
+          type="login"
+          value="Login"
+          class="btn btn-block btn-primary my-4"
+        />
+      </div>
+    </form>
+  </section>
+</main>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>
